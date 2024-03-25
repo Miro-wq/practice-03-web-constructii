@@ -188,7 +188,7 @@ p {
 
 span,
 footer {
-  line-height: 1.8;
+  line-height: 1.4;
 }
 
 .tm-btn {
@@ -321,7 +321,7 @@ footer {
   right: 70px;
   width: 300px;
   height: 240px;
-  margin-top: 0;
+  margin-top: 20px;
   margin-bottom: 0;
   background-color: #33333300;
   color: #999;
@@ -337,6 +337,8 @@ footer {
 .tm-brand-text {
   font-size: 32px;
   text-align: center;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Nav */
@@ -347,7 +349,6 @@ footer {
 .tm-nav {
   position: fixed;
   top: 0;
-  left: -1px;
   width: 50%;
   z-index: 1000;
 }
@@ -372,7 +373,7 @@ footer {
 
 .nav-link:hover,
 .nav-link.current {
-  color: #e4d50b;
+  color: var(--gold-color);
 }
 
 /* Introduction */
@@ -664,12 +665,12 @@ figure.effect-goliath:hover p {
     font-size: 1.2rem;
     background-color: #444444;
     border: none;
-    color: #999999;
+    /* color: #999999; */
     outline: none;
   }
 
   .navbar-toggler:hover {
-    color: #99cc99;
+    color: var(--gold-color);
   }
 
   .tm-content {
