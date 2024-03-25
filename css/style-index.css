@@ -156,7 +156,7 @@ body {
   margin: 0;
 }
 a {
-  color: #fff;
+  color: var(--full-black);
   text-decoration: none;
 }
 a:hover {
@@ -592,13 +592,37 @@ figure.effect-goliath:hover p {
     transform: scale(1);
   }
 }
-
+/* ==========================================contact */
 /* Contact */
 .tm-contact-form {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
+.adr {
+  font-size: large;
+  color: var(--full-black);
+  margin: 0;
+  text-decoration: underline;
+}
+.down-contact {
+  color: var(--full-black);
+  text-align: left;
+  margin: 0;
+  line-height: 1.5;
+}
+.icon-group {
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  margin-bottom: 3vw;
+  align-items: center;
+  justify-content: center;
+}
+.line {
+  margin-left: 20px;
+}
+/* ============================================== */
 .form-group {
   margin-bottom: 40px;
 }
@@ -640,7 +664,7 @@ figure.effect-goliath:hover p {
   }
   .tm-nav ul {
     position: relative;
-    left: -280px;
+    right: -280px;
     flex-direction: column;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -649,7 +673,7 @@ figure.effect-goliath:hover p {
   }
 
   .tm-nav ul.show {
-    left: 0;
+    right: 0;
   }
 
   .nav-link {
@@ -657,20 +681,35 @@ figure.effect-goliath:hover p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-
+  /* mod */
+  .menu-on-right {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .tm-nav-items {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  /* === */
   .navbar-toggler {
     display: block;
     width: 100px;
     height: 92px;
     font-size: 1.2rem;
-    background-color: #444444;
+    background-color: #ffffff00;
     border: none;
     /* color: #999999; */
     outline: none;
+    border-radius: 4px;
   }
 
   .navbar-toggler:hover {
-    color: var(--gold-color);
+    color: var(--full-black);
   }
 
   .tm-content {
@@ -688,7 +727,7 @@ figure.effect-goliath:hover p {
   .tm-brand {
     position: static;
     margin-left: auto;
-    margin-right: 0;
+    margin-right: 24px;
   }
 
   .tm-gallery figure {
