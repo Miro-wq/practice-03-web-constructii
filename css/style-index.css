@@ -357,6 +357,7 @@ footer {
   background-color: #444444a2;
   display: flex;
   justify-content: space-around;
+  border-radius: 50px;
 }
 
 .nav-item {
@@ -664,16 +665,20 @@ figure.effect-goliath:hover p {
   }
   .tm-nav ul {
     position: relative;
-    right: -280px;
+    left: -280px;
     flex-direction: column;
     padding-top: 15px;
     padding-bottom: 15px;
     width: 280px;
     transition: all 0.5s ease;
+    background-color: var(--full-black);
+    border-radius: 0;
+    visibility: hidden;
   }
 
   .tm-nav ul.show {
-    right: 0;
+    left: 0;
+    visibility: visible;
   }
 
   .nav-link {
@@ -681,35 +686,20 @@ figure.effect-goliath:hover p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  /* mod */
-  .menu-on-right {
-    width: 100vw;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-  .tm-nav-items {
-    width: 100vw;
-    height: 80vh;
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-  }
-  /* === */
   .navbar-toggler {
     display: block;
-    width: 100px;
-    height: 92px;
+    width: 70px;
+    height: 70px;
     font-size: 1.2rem;
-    background-color: #ffffff00;
+    background-color: var(--full-black);
     border: none;
-    /* color: #999999; */
+    color: var(--gold-color);
     outline: none;
-    border-radius: 4px;
+    /* border-radius: 6px; */
   }
 
   .navbar-toggler:hover {
-    color: var(--full-black);
+    color: var(--gold-color);
   }
 
   .tm-content {
