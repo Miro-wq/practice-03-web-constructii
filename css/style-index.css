@@ -193,11 +193,12 @@ footer {
 
 .tm-btn {
   display: inline-block;
-  /* border: 2px solid #666; */
+  border: 1px solid var(--full-black);
   background-color: transparent;
-  color: #999;
+  color: var(--full-black);
   padding: 14px 40px;
   font-size: 20px;
+  border-radius: 4px;
 }
 
 .last {
@@ -214,8 +215,8 @@ footer {
 }
 .tm-btn:hover {
   color: var(--gold-color);
-  background-color: rgba(71, 69, 69, 0.541);
-  border-radius: 50%;
+  border-color: var(--gold-color);
+  background-color: var(--full-black);
 }
 
 .tm-text-small {
@@ -226,6 +227,12 @@ footer {
 }
 .tm-text-right {
   text-align: right;
+}
+.tm-text-right.tm-mb-130 {
+  direction: rtl;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .tm-text-primary {
   color: rgb(0, 0, 0);
@@ -268,6 +275,10 @@ footer {
 }
 .tm-mb-50 {
   margin-bottom: 50px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 27px;
 }
 .tm-mb-80 {
   margin-bottom: 80px;
@@ -295,7 +306,7 @@ footer {
 }
 
 .tm-content-small {
-  padding: 190px 120px 70px;
+  padding: 120px 120px 70px;
 }
 .tm-content-small-top {
   padding-top: 130px;
@@ -357,7 +368,9 @@ footer {
   background-color: #444444a2;
   display: flex;
   justify-content: space-around;
-  border-radius: 50px;
+  border-radius: 4px;
+  background-color: #000000b8;
+  box-shadow: 17px 24px 11px rgb(0 0 0 / 34%);
 }
 
 .nav-item {
@@ -421,6 +434,8 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  box-shadow: 17px 24px 11px rgb(0 0 0 / 34%);
+  background-color: #222222e3;
 }
 
 .tm-gallery figure {
@@ -618,7 +633,7 @@ figure.effect-goliath:hover p {
   width: auto;
   margin-bottom: 3vw;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .line {
   margin-left: 20px;
@@ -691,15 +706,15 @@ figure.effect-goliath:hover p {
     width: 70px;
     height: 70px;
     font-size: 1.2rem;
-    background-color: var(--full-black);
+    background-color: var(--gold-color);
     border: none;
-    color: var(--gold-color);
+    color: var(--full-black);
     outline: none;
-    /* border-radius: 6px; */
+    border-radius: 6px;
   }
 
   .navbar-toggler:hover {
-    color: var(--gold-color);
+    color: var(--full-black);
   }
 
   .tm-content {
@@ -740,10 +755,10 @@ figure.effect-goliath:hover p {
   .tm-parallax {
     min-height: 360px;
   }
-
+  /* 
   #contact .tm-parallax {
     margin-bottom: 425px;
-  }
+  } */
 
   .mapouter {
     top: 360px;

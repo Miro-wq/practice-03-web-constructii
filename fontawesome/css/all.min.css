@@ -1909,6 +1909,7 @@
 
 .fa-envelope:before {
   content: "\f0e0";
+  color: black;
 }
 
 .fa-envelope-open:before {
@@ -2897,6 +2898,7 @@
 
 .fa-home:before {
   content: "\f015";
+  color: black;
 }
 
 .fa-hooli:before {
@@ -3973,6 +3975,7 @@
 
 .fa-phone:before {
   content: "\f095";
+  color: black;
 }
 
 .fa-phone-alt:before {
