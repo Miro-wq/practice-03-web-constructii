@@ -280,6 +280,9 @@ footer {
   font-style: normal;
   font-size: 27px;
 }
+.tel-contact {
+  text-decoration: underline;
+}
 .tm-mb-80 {
   margin-bottom: 80px;
 }
@@ -436,6 +439,15 @@ footer {
   justify-content: center;
   box-shadow: 17px 24px 11px rgb(0 0 0 / 34%);
   background-color: #222222e3;
+  border: 10px solid transparent; /* Setează o margine solidă cu o culoare transparentă */
+  border-image: linear-gradient(
+    45deg,
+    yellow 33.33%,
+    black 33.33%,
+    black 66.67%,
+    yellow 66.67%
+  ); /* Folosește un gradient liniar de la 45 de grade format din galben și negru */
+  border-image-slice: 50; /* Specifică cum este tăiat gradientul */
 }
 
 .tm-gallery figure {
